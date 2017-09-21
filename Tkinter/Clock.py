@@ -15,7 +15,7 @@ def change_time():
     var.set(temp)
 
 
-if __name__=='__main__':
+def start(year='2017',month='09',date='22',hour='08',minute='00'):
     window = tkinter.Tk()
     window.title('Good morning')
     window.geometry('550x600')
@@ -30,8 +30,9 @@ if __name__=='__main__':
     #refresh.start()
     #refresh.join()
 
+    target_time=year+'-'+month+'-'+date+' '+hour+':'+minute
     while(True):
-        if(var.get() == '2017-08-18 09:31'):
+        if(var.get() == '2017-09-22 08:00'):
             driver = webdriver.Chrome('../../chrome driver/Chromedriver.exe')
             driver.get('https://www.youtube.com/watch?v=RgKAFK5djSk')
             break

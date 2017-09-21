@@ -17,11 +17,11 @@ class test:
         self.commit = commit
     def get_value(self):
         return self.value
-    def set_value(v):
+    def set_value(self,v):
         self.value = v
     def get_commit(self):
         return self.commit
-    def set_commit(c):
+    def set_commit(self,c):
         self.commit = c
 
 if __name__=='__main__':
@@ -35,3 +35,5 @@ if __name__=='__main__':
     for t_i in tl:
         print(t_i.get_value())
         print(t_i.get_commit())
+    tl[0].set_value(8717)
+    print(tl[0].get_value())

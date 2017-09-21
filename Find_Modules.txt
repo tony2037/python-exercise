@@ -1,0 +1,3 @@
+>>> import imp
+>>> imp.find_module('Tkinter')
+#imp.find_module(module's name)
